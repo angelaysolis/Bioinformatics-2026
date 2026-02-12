@@ -1,0 +1,26 @@
+#Pandas Assignments 
+#First set directory 
+cd ~/Desktop/bioinformatics
+#1.Delete "Zoo" and "zoo" using sed -E so that it lets me use pipe to do both. 
+sed -E 's/Zoo|zoo//g' pandas.tsv > panda_zoo.txt
+#2.Sort by sex and print name (column1), age (column2), sex (column3). Used Number of Record to ensure headers stayed on the first row.
+awk 'NR==1 {print $1,$4,$2}; NR>1 {print $1,$4,$2 | "sort -k3"}' pandas.tsv > sorted_pandas.txt
+# 3.Sorted by location A2Z
+grep "." pandas.tsv | sort -k5 > pandas_zoos_A2Z.txt
+#4.Replaced male with M and female with F. I made sure to replace m with M, if the word started with m to make sure female was left alone by setting a word boundry \b. \w+ makes sure to include the whole word after it finds what i selected to replace. 
+sed -r 's/\bm\w+/M/g; s/\bf\w+/F/g' pandas.tsv > pandas_m_f.txt
+#5. Counted females that were born in October
+grep 'female' pandas.tsv | grep -c 'October' 
+##6 Used -n to add prefix, "" was added to add each line
+grep -n "" pandas.tsv > panda_name.txt
+#7.To print specific lines with sed use -n command and make sure to use ; between each line like '1p;6p;17p' instead of '1,6,17p' (1,6p means it will print 1 through 6 so an error pops up)
+sed -n '1p;6p;17p' pandas.tsv > lines_1_6_17.txt
+#8. Used -i so that it didnt matter if it was x or X
+grep -i "X" pandas.tsv > x_lines.txt
+#9 Printed location column and sorted by unique places using -u
+awk '{print $5}' pandas.tsv | sort | uniq -u > unique_locations.txt
+#10. First set limit to 10 for age (column 4), then I print the names and ages,then sort based on the second column since the print command made the 4 column be 2 column. 
+awk '$4 <= 10' pandas.tsv | awk '{print $1,$4}' | sort -nk2 > young_pandas.txt
+#10. You could also sort first after setting the limit to the youngest so that the column remains in the 4th column. 
+awk '$4 <= 10' pandas.tsv | sort -nk4 | awk '{print $1,$4}' > young_pandas.txt
+
