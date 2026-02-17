@@ -6,7 +6,7 @@ cd ~/Desktop/bioinformatics/BLAST
 makeblastdb -in database_mystery_transcripts.fasta -dbtype nucl -out nuc_database
 #2. Making Database for Protein 
 makeblastdb -in database_mystery_proteins.fasta -dbtype prot -out prot_database
-#3. Searched mystery nuc againts mystery transcript db - used -evalue to keep sequences within specific value, used -max_target_seqs to only show 5 hits, used 7 for format to get tabular data with comment lines
+#3. Searched mystery nuc against mystery transcript db - used -evalue to keep sequences within specific value, used -max_target_seqs to only show 5 hits, used 7 for format to get tabular data with comment lines
 blastn -db nuc_database -query query_mystery_nucleotide.fasta -evalue 1e-3 -max_target_seqs 5 -outfmt 7 -out blastn_results.txt
 #4. The IDs are: T010027234997, T010003453160, and T010027234995
 #5. I used grep -v to invert the search so that it removed lines that contained the #. % identity is present in column 3, so i set a limit to select for values grater than 90%. Then, I printed column 2 for the ID
