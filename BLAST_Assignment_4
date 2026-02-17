@@ -17,4 +17,3 @@ blastp -db prot_database -query query_mystery_protein.fasta -evalue 1e-5 -max_ta
 #8. Mystery_transcript species: Coffea arabica
 #9. Species of mystery query: Gardenia jasminoides 
 #10. Gene of mystery query: putative catalase
-
