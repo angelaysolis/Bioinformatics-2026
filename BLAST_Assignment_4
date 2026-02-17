@@ -1,0 +1,20 @@
+#Activate blast 
+conda activate blast 
+#Set working directory (where files are located)
+cd ~/Desktop/bioinformatics/BLAST
+#1. Making Database for Transcript
+makeblastdb -in database_mystery_transcripts.fasta -dbtype nucl -out nuc_database
+#2. Making Database for Protein 
+makeblastdb -in database_mystery_proteins.fasta -dbtype prot -out prot_database
+#3. Searched mystery nuc againts mystery transcript db - used -evalue to keep sequences within specific value, used -max_target_seqs to only show 5 hits, used 7 for format to get tabular data with comment lines
+blastn -db nuc_database -query query_mystery_nucleotide.fasta -evalue 1e-3 -max_target_seqs 5 -outfmt 7 -out blastn_results.txt
+#4. The IDs are: T010027234997, T010003453160, and T010027234995
+#5. I used grep -v to invert the search so that it removed lines that contained the #. % identity is present in column 3, so i set a limit to select for values grater than 90%. Then, I printed column 2 for the ID
+grep -v '^#' blastn_results.txt | awk '$3 > 90' | awk '{print $2}' > most_similar.txt
+#6. Use blastp to search for protein query - followed line line #3 above and modified evalue to 1e-5 and max target seqs to 15
+blastp -db prot_database -query query_mystery_protein.fasta -evalue 1e-5 -max_target_seqs 15 -outfmt 7 -out blastp_results.txt
+#7 There are 6 hits, the IDs are: P010027090796, P010027090798, P010027073865, P010027077695,P010027071558, P010027071553
+#8. Mystery_transcript species: Coffea arabica
+#9. Species of mystery query: Gardenia jasminoides 
+#10. Gene of mystery query: putative catalase
+
