@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash/learning_bash.sh 
 name=Angela 
 greeting=Hola
 echo "$greeting $name"
