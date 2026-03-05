@@ -1,0 +1,13 @@
+#1 Aligned sequences is called: bat_tree_aligned.fasta
+
+#2 Newick file is called: RAxML_bestTree.raxml_bats_1
+
+#3 For MUSCLE this was the compad CIPRES used: Muscle -seqtype protein -in infile.fasta -maxiters 16 -hydro 5 -hydrofactor 1.2 -log logfile.txt -weight1 clustalw -distance1 kmer6_6 -cluster1 upgmb -sueff 0.1 -root1 pseudo -maxtrees 1 -weight2 clustalw -distance2 pctidkimura -cluster2 upgmb -sueff 0.1 -root2 pseudo -objscore sp -noanchors -fastaout output.fasta 
+
+# For RAxML, CIPRES used: raxmlHPC-HYBRID-AVX -T 4 -f a -N autoMRE -n raxml_bats_1 -s infile.txt -c 25 -p 12345 -m PROTCATDAYHOFF -x 12345
+
+
+
+#4 There are several species that are closely related Pteropus lylei (Flying fox): Syconycteris austialis, Dobsonia viridis, Cynopterus sphinx, Rousettus leschenaultii, Epomophorous wahlbergi.
+
+#5 Phylogeny has been useful in understdaning how strains of viruses have evolved. For example, SARS-COV-2 has been the most sequenced virus in history due to the impacts that it had in 2020. Scientists were able to sequence and create a phylogentic tree that tracks its mutations. This tracking allows us to determine and study strains that have evolved to become more virulent to understand the genetic components that have led to that outcome. 
