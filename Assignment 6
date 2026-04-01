@@ -1,0 +1,33 @@
+Using Ensembl answer the following quesKons:
+1.) How many splice variants does the human BRCA2 gene have? 19 splice variants 
+2.) How many exons are in the longest splice variant(s) of BRCA2? 27 exons in ENST00000380152.8 BRCA2-201
+3.) How many introns are in the longest splice variant(s) of BRCA2? 27 introns 
+4.) What chromosome is this gene on? Chromosome 13
+5.) What are the gene synonyms of BRCA2? BRCC2, FACD, FAD, FAD1, FANCD, FANCD1, XRCC11
+6.) How many orthologs of human BRCA2 are found in the African ostrich? 174 orthologs 
+7.) In the human hemoglobin transcript ENST00000330597.5 HBG1-201, what is the sequence of the second exon? 
+ACTTATTTACCAAGCATTGGAGGAATATCGTAGGTAAAAATGCCTATTGGATCCAAAGAG
+AGGCCAACATTTTTTGAAATTTTTAAGACACGCTGCAACAAAGCAG              
+8.) What is the length of the first intron of this hemoglobin transcript? 754 bp
+9.) How many pseudogenes are in the narwal genome annotaIon (NGI_Narwhal_1, INSDC Assembly GCA_005190385.2)? 723
+
+Using Genomicus answer the following quesKons:
+10.) What two genes flank BRCA2 in the human genome? ZAR1L on the left, and N4BP2L1 on the right 
+11.) What genes flank the sonic hedgehog gene (shh) in the be4a (Siamese fighIng) fish? rnf32 on the left and RBM33 on the right
+12.) How many copies of shh are in the be4a (Siamese fighIng) fish? 1 copy
+13.) How many copies of shh are in AtlanIc salmon? 1 copy 
+
+Using NCBI answer the following quesKons:
+14.) How many genome assemblies are available for Bos taurus on NCBI? 198 assemblies 
+15.) How many of the above assemblies are assembled into chromosomes? 25 are assembled into chromosome level. 
+16.) How many chromosomes does Bos taurus have excluding sex chromosomes? 29 chromosomes 
+17.) Which cow chromosome is the longest? Chromosme 1
+18.) How many microRNAs are annotated on chromosome the assembly: Bos taurus ARS-UCD2.0? 1,034
+19.) If I am interested in learning more about the gene associate with the transcript: NM_001104822, what is a good publicaIon to read on PubMed? Yasumasu S, Yamada K, Akasaka K, Mitsunaga K, Iuchi I, Shimada H, Yamagami K. Isolation of cDNAs for LCE and HCE, two constituent proteases of the hatching enzyme of Oryzias latipes, and concurrent expression of their mRNAs during development. Dev Biol. 1992 Oct;153(2):250-8. doi: 10.1016/0012-1606(92)90110-3. PMID: 1397682.
+20.) What is the translated coding sequence of NM_001104822? 
+ 	1  mdllakasvl lllllslsna qtdnmeeaen gsskeeides eledvssiif rmnnnsmeel
+       61 legdlvlpkt rnamkcfgap dscrwpkssn givkvpyvvs dnyesdeket irnamkefae
+      121 ktcihfvprn neraylslep rfgcksmmgy vgdkqvvvlq rfgcikhavi qhellhalgf
+      181 yhehtrsdrd qhvkinweni ikdfthnfdk ndtdnlgtpy dygsimhygr tafgkdrket
+      241 itpipnpkaa igqtermsdi dilrvnklyk c
+
