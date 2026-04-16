@@ -6,7 +6,7 @@ sed -E 's/Zoo|zoo//g' pandas.tsv > panda_zoo.txt
 #2.Sort by sex and print name (column1), age (column2), sex (column3). Used Number of Record to ensure headers stayed on the first row.
 awk 'NR==1 {print $1,$4,$2}; NR>1 {print $1,$4,$2 | "sort -k3"}' pandas.tsv > sorted_pandas.txt
 # 3.Sorted by location A2Z
-grep "." pandas.tsv | sort -k5 > pandas_zoos_A2Z.txt
+ grep "." pandas.tsv | sort -k5 | awk '{print $5}' > pandas_zoos_A2Z.txt
 #4.Replaced male with M and female with F. I made sure to replace m with M, if the word started with m to make sure female was left alone by setting a word boundry \b. \w+ makes sure to include the whole word after it finds what i selected to replace. 
 sed -r 's/\bm\w+/M/g; s/\bf\w+/F/g' pandas.tsv > pandas_m_f.txt
 #5. Counted females that were born in October
