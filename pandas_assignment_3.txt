@@ -1,8 +1,8 @@
 #Pandas Assignments 
 #First set directory 
 cd ~/Desktop/bioinformatics
-#1.Delete "Zoo" and "zoo" using sed -E so that it lets me use pipe to do both. 
-sed -E 's/Zoo|zoo//g' pandas.tsv > panda_zoo.txt
+#1.Delete "Zoo" - this command deleted Zoo/zoo.
+sed '/Zoo/d' pandas.tsv > panda_zoo.txt
 #2.Sort by sex and print name (column1), age (column2), sex (column3). Used Number of Record to ensure headers stayed on the first row.
 awk 'NR==1 {print $1,$4,$2}; NR>1 {print $1,$4,$2 | "sort -k3"}' pandas.tsv > sorted_pandas.txt
 # 3.Sorted by location A2Z
