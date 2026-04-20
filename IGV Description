@@ -1,0 +1,4 @@
+The image attached shows several data types, including ATAC, RNA, and Hi-C data. ATAC data shows us the accessibility of chromatins.
+Non-coding OCRs are areas of the gene that are not made into proteins but contain important sites for gene regulation.
+Hi-C loops show us how specific DNA locations interact to form a loop. These loops are essential for gene regulation since they bring genetic material closer to each other, which may contain regulatory elements.
+To summarize, the data shown helps us examine how genetic material interacts and how it is regulated by promoters, enhancers, or silencers.
