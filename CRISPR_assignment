@@ -1,0 +1,15 @@
+1. Ovis aries (sheep)
+2. CCDC112 
+3. Rank 1 Target Sequence: GGTAGGTTTGTAAAGTCTAGAGG
+   Genomic Location: 7:3877269	
+4. Left Primer 
+      Sequence: GCACTCATTTTCCTTCCGATTA
+      Coordinates: 7:3877320-3877342
+    Right Primer 
+      Sequence: CTCCTCCTTTACCTATGTGGGA
+      Coordinates: 7:3877186-3877208
+5. CCDC112 is a gene that is involved male fertility due to its role in mitochondiral morphogenesis and sheath formation. 
+  If we knock down this gene, it will result in male sterility due to the abnormal mitochondrial sheath of sperm and reduced ATP,
+  which would affect the function and motility of sperm. Essentially, the sperm would not have enough energy to move and reach fertilization.
+  The phenotype would be the reduced sperm motility.
+  Source for CCDC112: https://www.biorxiv.org/content/10.1101/2024.11.05.622046v1.full
